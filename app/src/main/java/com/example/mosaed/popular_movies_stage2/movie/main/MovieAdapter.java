@@ -25,6 +25,7 @@ class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
 
     private Context mContext;
     private Cursor mCursor;
+    private View mEmptyView;
 
     final private ListItemClickListener mOnClickListener;
 
@@ -32,9 +33,10 @@ class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
         void onListItemClick(Movie movie);
     }
 
-    MovieAdapter(@NonNull Context context, ListItemClickListener listener) {
+    MovieAdapter(@NonNull Context context, ListItemClickListener listener, View emptyView) {
         mContext = context;
         mOnClickListener = listener;
+        mEmptyView = emptyView;
     }
 
     @Override
@@ -63,6 +65,7 @@ class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
     void swapCursor(Cursor newCursor) {
         mCursor = newCursor;
         notifyDataSetChanged();
+        mEmptyView.setVisibility(getItemCount() == 0 ? View.VISIBLE : View.GONE);
     }
 
     class MovieViewHolder extends RecyclerView.ViewHolder implements

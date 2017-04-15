@@ -18,6 +18,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.example.mosaed.popular_movies_stage2.movie.details.DetailActivity;
 import com.example.mosaed.popular_movies_stage2.movie.details.Movie;
@@ -56,6 +57,9 @@ public class MainActivity extends AppCompatActivity implements
     @BindView(R.id.pb_loading_indicator)
     ProgressBar mLoadingIndicator;
 
+    @BindView(R.id.recyclerview_movie_empty)
+    TextView mEmptyView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,7 +75,7 @@ public class MainActivity extends AppCompatActivity implements
         mMovieRecyclerView.setLayoutManager(mLayoutManager);
         mMovieRecyclerView.setHasFixedSize(true);
 
-        mMovieAdapter = new MovieAdapter(this, this);
+        mMovieAdapter = new MovieAdapter(this, this, mEmptyView);
         mMovieRecyclerView.setAdapter(mMovieAdapter);
 
         setupSharedPreferences();
