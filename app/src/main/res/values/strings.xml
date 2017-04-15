@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Popular Movies - Stage 2</string>
+    <string name="description_movie_poster">Movie Poster</string>
+    <string name="most_popular">Most Popular Movies</string>
+    <string name="top_rated">Top Rated Movies</string>
+    <string name="error_message">Empty!</string>
+    <string name="title_overview">Overview</string>
+    <string name="title_reviews">Reviews</string>
+    <string name="title_trailers">Trailers</string>
+    <string name="my_favorite">My Favorite</string>
+    <string name="favorite">Favorite</string>
+    <string name="title_activity_detail">Movie Detail</string>
+    <string name="unfavorite">Unfavorite</string>
+
+    <string name="msg_favorite_movie">Added to favorite!</string>
+    <string name="msg_unfavorite_movie">Removed from favorite!</string>
+    <string name="release_date_icon">Release date icon</string>
+    <string name="like_icon">Like icon</string>
+    <string name="recyclerview_empty">Empty!</string>
+
+    <string name="content_authority" translatable="false">com.example.mosaed.popular_movies_stage2</string>
+    <string name="pref_sort_type_key" translatable="false">sort_type</string>
+    <string name="key_intent_movie" translatable="false">key_intent_movie</string>
+    <string name="path_trailers" translatable="false">videos</string>
+    <string name="path_reviews" translatable="false">reviews</string>
+    <string name="sort_type_popular" translatable="false">popular</string>
+    <string name="sort_type_top_rated" translatable="false">top_rated</string>
+    <string name="sort_type_favorite" translatable="false">favorite</string>
+</resources>

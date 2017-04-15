@@ -1,0 +1,8 @@
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iv_trailer_thumbnail"
+    android:layout_width="160dp"
+    android:layout_height="90dp"
+    android:adjustViewBounds="true"
+    tools:src="@mipmap/ic_launcher"/>
