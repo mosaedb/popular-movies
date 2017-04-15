@@ -26,7 +26,7 @@ public class NetworkUtils {
     private static final String QUERY_PARAMETER = "api_key";
 
     // TODO: Replacing the {api_key} with your own API key.
-    private static final String apiKey = "0ca9420e23e450c489551a912331070f";
+    private static final String apiKey = "";
 
     public static HttpUrl buildBasicUrl(String sortType) {
         HttpUrl url = new HttpUrl.Builder()
